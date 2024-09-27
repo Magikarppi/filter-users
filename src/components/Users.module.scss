@@ -15,6 +15,12 @@
     border-radius: 0.5rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        margin: 1rem;
+    }
 }
 
 .inputGroup {
@@ -23,15 +29,9 @@
     gap: 1rem;
     margin: 1rem 0;
     width: 100%;
-}
+    box-sizing: border-box;
 
-@media (min-width: 768px) {
-    .card {
-        flex-direction: row;
-        margin: 1rem;
-    }
-
-    .inputGroup {
+    @media (min-width: 768px) {
         flex-direction: row;
         align-items: center;
     }

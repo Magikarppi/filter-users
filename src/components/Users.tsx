@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import styles from "./Users.module.css";
+import styles from "./Users.module.scss";
 import { API_URL_USERS } from "../consts";
 import { useState } from "react";
 

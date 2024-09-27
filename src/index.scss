@@ -1,11 +1,16 @@
+$primary-color: #646cff;
+$secondary-color: #535bf2;
+$background-color: #e2e2e2;
+$text-color: #1a1a1a;
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #e2e2e2;
+    color: $text-color;
+    background-color: $background-color;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -15,11 +20,11 @@
 
 a {
     font-weight: 500;
-    color: #646cff;
+    color: $primary-color;
     text-decoration: inherit;
 }
 a:hover {
-    color: #535bf2;
+    color: $secondary-color;
 }
 
 body {
@@ -36,25 +41,25 @@ body {
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
-    color: #1a1a1a;
+    color: $text-color;
 }
 
 h2 {
     font-size: 2.4em;
     line-height: 1.1;
-    color: #1a1a1a;
+    color: $text-color;
 }
 
 p {
     font-size: 1.6em;
     line-height: 1.5;
-    color: #1a1a1a;
+    color: $text-color;
 }
 
 label {
     font-size: 1.6em;
     line-height: 1.5;
-    color: #1a1a1a;
+    color: $text-color;
 }
 
 input {
@@ -64,15 +69,15 @@ input {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #ffffff;
+    background-color: $background-color;
     transition: border-color 0.25s;
-    color: #1a1a1a;
+    color: $text-color;
 }
 
 option {
     font-weight: 500;
     font-family: inherit;
-    color: #1a1a1a;
+    color: $text-color;
 }
 
 select {
@@ -84,7 +89,7 @@ select {
     font-family: inherit;
     background-color: #ffffff;
     transition: border-color 0.25s;
-    color: #1a1a1a;
+    color: $text-color;
 }
 
 button {
@@ -101,26 +106,12 @@ button {
     margin-right: 1rem;
 }
 button:hover {
-    border-color: #646cff;
+    border-color: $secondary-color;
 }
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-    a:hover {
-        color: #747bff;
-    }
-    button {
-        background-color: #f9f9f9;
-    }
-}
-
 @media (min-width: 768px) {
     h1 {
         font-size: 3.2em;
